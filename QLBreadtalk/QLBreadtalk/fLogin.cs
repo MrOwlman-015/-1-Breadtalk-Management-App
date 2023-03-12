@@ -48,12 +48,12 @@ namespace QLBreadtalk
             }
             string connetionString;
             SqlConnection cnn;
-            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\bin\Debug\TestQLBreadtalk.mdf"";Integrated Security=True;Connect Timeout=30;";
+            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\bin\Debug\TestQLBreadtalk.mdf"";Integrated Security=True;Connect Timeout=30;";
             cnn = new SqlConnection(connetionString);
             cnn.Open();
             SqlCommand cmd = new SqlCommand("SELECT * FROM NhanVien WHERE taikhoan=@tk and matkhau=@mk", cnn);
-            cmd.Parameters.AddWithValue("@tk", txt_username.Text.ToLower());
-            cmd.Parameters.AddWithValue("@mk", txt_mk.Text.ToLower());
+            cmd.Parameters.AddWithValue("@tk", txt_username.Text);
+            cmd.Parameters.AddWithValue("@mk", txt_mk.Text);
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.HasRows)
             {
@@ -92,6 +92,7 @@ namespace QLBreadtalk
 
         private void txt_mk_Enter(object sender, EventArgs e)
         {
+            txt_mk.PasswordChar = '*';
             if (txt_mk.Text == "Nhập mật khẩu")
             {
                 txt_mk.Text = "";

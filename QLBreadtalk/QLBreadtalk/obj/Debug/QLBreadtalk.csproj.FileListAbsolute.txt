@@ -20,3 +20,15 @@ E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.csproj
 E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.csproj.CoreCompileInputs.cache
 E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.exe
 E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.pdb
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\bin\Debug\QLBreadtalk.exe.config
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\bin\Debug\QLBreadtalk.exe
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\bin\Debug\QLBreadtalk.pdb
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.csproj.AssemblyReference.cache
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.csproj.SuggestedBindingRedirects.cache
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.fLogin.resources
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.fRegist.resources
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.Properties.Resources.resources
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.csproj.GenerateResource.cache
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.csproj.CoreCompileInputs.cache
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.exe
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.pdb
