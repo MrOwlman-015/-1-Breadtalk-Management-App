@@ -1,0 +1,22 @@
+D:\Student\HK4\Software_Techniques\DoAn_TH\hangthat\QLBreadtalk\QLBreadtalk\bin\Debug\QLBreadtalk.exe.config
+D:\Student\HK4\Software_Techniques\DoAn_TH\hangthat\QLBreadtalk\QLBreadtalk\bin\Debug\QLBreadtalk.exe
+D:\Student\HK4\Software_Techniques\DoAn_TH\hangthat\QLBreadtalk\QLBreadtalk\bin\Debug\QLBreadtalk.pdb
+D:\Student\HK4\Software_Techniques\DoAn_TH\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.csproj.AssemblyReference.cache
+D:\Student\HK4\Software_Techniques\DoAn_TH\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.Properties.Resources.resources
+D:\Student\HK4\Software_Techniques\DoAn_TH\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.csproj.GenerateResource.cache
+D:\Student\HK4\Software_Techniques\DoAn_TH\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.csproj.CoreCompileInputs.cache
+D:\Student\HK4\Software_Techniques\DoAn_TH\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.exe
+D:\Student\HK4\Software_Techniques\DoAn_TH\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.pdb
+D:\Student\HK4\Software_Techniques\DoAn_TH\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.fLogin.resources
+E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\bin\Debug\QLBreadtalk.exe.config
+E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\bin\Debug\QLBreadtalk.exe
+E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\bin\Debug\QLBreadtalk.pdb
+E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.csproj.AssemblyReference.cache
+E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.csproj.SuggestedBindingRedirects.cache
+E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.fLogin.resources
+E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.fRegist.resources
+E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.Properties.Resources.resources
+E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.csproj.GenerateResource.cache
+E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.csproj.CoreCompileInputs.cache
+E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.exe
+E:\HOC TAP\PROJECT\hangthat\QLBreadtalk\QLBreadtalk\obj\Debug\QLBreadtalk.pdb
