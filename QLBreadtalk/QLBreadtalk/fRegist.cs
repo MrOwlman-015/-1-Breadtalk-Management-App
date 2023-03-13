@@ -25,10 +25,10 @@ namespace QLBreadtalk
         {
             string connetionString;
             SqlConnection cnn;
-            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\bin\Debug\TestQLBreadtalk.mdf"";Integrated Security=True;Connect Timeout=30;";
+            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\bin\Debug\QLBreadtalk.mdf"";Integrated Security=True;Connect Timeout=30;";
             cnn = new SqlConnection(connetionString);
             cnn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM NhanVien WHERE taikhoan=@tk", cnn);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM NhanVien WHERE username=@tk", cnn);
             cmd.Parameters.AddWithValue("@tk", txt_username.Text);
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.HasRows)
@@ -43,10 +43,9 @@ namespace QLBreadtalk
                 if (String.Compare(txt_password.Text, txt_repassword.Text) != 0)
                 {
                     MessageBox.Show("Xac nhan mk sai");
-                    txt_username.Text = "";
                     return;
                 }
-                SqlCommand cmd2 = new SqlCommand("SELECT * from NhanVien where SDT=@sdt", cnn);
+                SqlCommand cmd2 = new SqlCommand("SELECT * from NhanVien where sdt=@sdt", cnn);
                 cmd2.Parameters.AddWithValue("@sdt", txt_phone.Text.ToLower());
                 SqlDataReader dr2 = cmd2.ExecuteReader();
                 if (dr2.HasRows)
@@ -55,11 +54,13 @@ namespace QLBreadtalk
                     dr2.Close(); return;
                 }
                 dr2.Close();
-                SqlCommand cmd3 = new SqlCommand("INSERT INTO NhanVien values (@tennv, @taikhoan, @matkhau, @sdt);", cnn);
-                cmd3.Parameters.AddWithValue("@tennv", "");
-                cmd3.Parameters.AddWithValue("@taikhoan", txt_username.Text);
-                cmd3.Parameters.AddWithValue("@matkhau", txt_password.Text);
+                SqlCommand cmd3 = new SqlCommand("INSERT INTO NhanVien values (@username, @pass, @hotenNV, @sdt, @socalam, @loainv);", cnn);
+                cmd3.Parameters.AddWithValue("@username", txt_username.Text);
+                cmd3.Parameters.AddWithValue("@pass", txt_password.Text);
+                cmd3.Parameters.AddWithValue("@hotenNV", "");
                 cmd3.Parameters.AddWithValue("@sdt", txt_phone.Text);
+                cmd3.Parameters.AddWithValue("@socalam", 0);
+                cmd3.Parameters.AddWithValue("@loainv", 0);
                 int i = cmd3.ExecuteNonQuery();
                 if (i != 0)
                 {
@@ -136,6 +137,7 @@ namespace QLBreadtalk
 
         private void txt_repassword_Enter(object sender, EventArgs e)
         {
+            txt_repassword.PasswordChar = '*';
             if (txt_repassword.Text == "Nhập lại mật khẩu")
             {
                 txt_repassword.Text = "";

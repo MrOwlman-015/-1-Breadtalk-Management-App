@@ -10,7 +10,7 @@ create table NhanVien (
 	maNV int identity (1,1),
 	username varchar(20) not null,
 	pass varchar(20) not null,
-	hotenNV nvarchar(50) not null,
+	hotenNV nvarchar(50),
 	sdt varchar(10) not null unique,
 	soCaLam int,
 	loaiNhanVien int, --1: admin, 2: nhân viên

@@ -48,10 +48,10 @@ namespace QLBreadtalk
             }
             string connetionString;
             SqlConnection cnn;
-            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\bin\Debug\TestQLBreadtalk.mdf"";Integrated Security=True;Connect Timeout=30;";
+            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\bin\Debug\QLBreadtalk.mdf"";Integrated Security=True;Connect Timeout=30;";
             cnn = new SqlConnection(connetionString);
             cnn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM NhanVien WHERE taikhoan=@tk and matkhau=@mk", cnn);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM NhanVien WHERE username=@tk and pass=@mk", cnn);
             cmd.Parameters.AddWithValue("@tk", txt_username.Text);
             cmd.Parameters.AddWithValue("@mk", txt_mk.Text);
             SqlDataReader dr = cmd.ExecuteReader();
