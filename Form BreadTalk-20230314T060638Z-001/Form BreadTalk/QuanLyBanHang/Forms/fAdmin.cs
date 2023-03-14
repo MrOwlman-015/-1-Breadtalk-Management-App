@@ -63,11 +63,6 @@ namespace QuanLyBanHang.Forms
 
         }
 
-        private void fAdmin_Load(object sender, EventArgs e)
-        {
-            load_data();
-        }
-
         private void load_data()
         {
             string connetionString;
@@ -79,29 +74,13 @@ namespace QuanLyBanHang.Forms
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable table = new DataTable();
             adapter.Fill(table);
-            dataGridView2.DataSource= table;
+            dataGridView2.DataSource = table;
             cnn.Close();
-            
-        }
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
 
-        private void tabControl1_Click(object sender, EventArgs e)
-        {
-            load_data();
-        }
-
-        private void btnXem_Click(object sender, EventArgs e)
-        {
-            load_data();
         }
 
         private void btnXemNV_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello world");
-            load_data();
         }
     }
 }

@@ -59,8 +59,6 @@ namespace QuanLyBanHang
                 return;
             }
             cnn.Close();
-
-
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using QuanLyBanHang.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -94,7 +93,7 @@ namespace QuanLyBanHang
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new fAdmin().Show();
+            OpenChildForm(new Forms.fAdmin(), sender);
         }
 
         private void button2_Click(object sender, EventArgs e)
