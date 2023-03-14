@@ -58,12 +58,12 @@ namespace QLBreadtalk
             if (dr.HasRows)
             {
                 dr.Close();
-                MessageBox.Show("Oke ngon r do bro");
+                MessageBox.Show("Login succeeded");
             }
             else
             {
                 dr.Close();
-                MessageBox.Show("Sai tk r bro");
+                MessageBox.Show("Failed to login");
                 txt_username.Text = "";
                 txt_mk.Text = "";
                 return;
@@ -97,7 +97,7 @@ namespace QLBreadtalk
             if (txt_mk.Text == "Nhập mật khẩu")
             {
                 txt_mk.Text = "";
-                txt_mk.ForeColor = Color.Black;
+                txt_mk.ForeColor = Color.Black; 
                 txt_mk.UseSystemPasswordChar = true;
             }
         }

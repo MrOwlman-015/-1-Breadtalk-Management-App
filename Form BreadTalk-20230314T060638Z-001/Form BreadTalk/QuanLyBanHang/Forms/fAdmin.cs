@@ -92,5 +92,16 @@ namespace QuanLyBanHang.Forms
         {
             load_data();
         }
+
+        private void btnXem_Click(object sender, EventArgs e)
+        {
+            load_data();
+        }
+
+        private void btnXemNV_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello world");
+            load_data();
+        }
     }
 }
