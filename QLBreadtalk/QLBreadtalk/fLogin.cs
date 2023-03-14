@@ -48,7 +48,7 @@ namespace QLBreadtalk
             }
             string connetionString;
             SqlConnection cnn;
-            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\bin\Debug\QLBreadtalk.mdf"";Integrated Security=True;Connect Timeout=30;";
+            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\QLBreadtalk.mdf";
             cnn = new SqlConnection(connetionString);
             cnn.Open();
             SqlCommand cmd = new SqlCommand("SELECT * FROM NhanVien WHERE username=@tk and pass=@mk", cnn);
@@ -78,6 +78,7 @@ namespace QLBreadtalk
             {
                 txt_username.Text = "";
                 txt_username.ForeColor = Color.Black;
+                
             }
         }
 
@@ -97,6 +98,7 @@ namespace QLBreadtalk
             {
                 txt_mk.Text = "";
                 txt_mk.ForeColor = Color.Black;
+                txt_mk.UseSystemPasswordChar = true;
             }
         }
 
@@ -106,6 +108,8 @@ namespace QLBreadtalk
             {
                 txt_mk.Text = "Nhập mật khẩu";
                 txt_mk.ForeColor = Color.Gray;
+                txt_mk.UseSystemPasswordChar = false;
+
             }
         }
 
@@ -123,6 +127,11 @@ namespace QLBreadtalk
         }
 
         private void lnk_forgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
         {
             this.Close();
         }

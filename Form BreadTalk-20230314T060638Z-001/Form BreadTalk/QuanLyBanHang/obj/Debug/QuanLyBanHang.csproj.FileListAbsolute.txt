@@ -1,0 +1,28 @@
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.AssemblyReference.cache
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.SuggestedBindingRedirects.cache
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.fLogin.resources
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.fMenu.resources
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Forms.fthongtincanhan.resources
+D:\Đồ án CNPM\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Forms.fAdmin.resources
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.AssemblyReference.cache
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.SuggestedBindingRedirects.cache
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\obj\Debug\QuanLyBanHang.fLogin.resources
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\obj\Debug\QuanLyBanHang.fMenu.resources
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\obj\Debug\QuanLyBanHang.Forms.fAdmin.resources
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\obj\Debug\QuanLyBanHang.Forms.fthongtincanhan.resources
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\Form BreadTalk-20230314T060638Z-001\Form BreadTalk\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb

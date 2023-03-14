@@ -25,7 +25,7 @@ namespace QLBreadtalk
         {
             string connetionString;
             SqlConnection cnn;
-            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\HOC TAP\PROJECT\-1-Breadtalk-Management-App\QLBreadtalk\QLBreadtalk\bin\Debug\QLBreadtalk.mdf"";Integrated Security=True;Connect Timeout=30;";
+            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\QLBreadtalk.mdf";
             cnn = new SqlConnection(connetionString);
             cnn.Open();
             SqlCommand cmd = new SqlCommand("SELECT * FROM NhanVien WHERE username=@tk", cnn);
@@ -113,11 +113,12 @@ namespace QLBreadtalk
 
         private void txt_password_Enter(object sender, EventArgs e)
         {
-            txt_password.PasswordChar= '*';
+           
             if (txt_password.Text == "Nhập mật khẩu")
             {
                 txt_password.Text = "";
                 txt_password.ForeColor = Color.Black;
+                txt_password.UseSystemPasswordChar = true;
             }
         }
 
@@ -132,6 +133,8 @@ namespace QLBreadtalk
             {
                 txt_password.Text = "Nhập mật khẩu";
                 txt_password.ForeColor = Color.Gray;
+                txt_password.UseSystemPasswordChar = false;
+
             }
         }
 
@@ -142,6 +145,8 @@ namespace QLBreadtalk
             {
                 txt_repassword.Text = "";
                 txt_repassword.ForeColor = Color.Black;
+                txt_repassword.UseSystemPasswordChar = true;
+
             }
         }
 
@@ -151,6 +156,8 @@ namespace QLBreadtalk
             {
                 txt_repassword.Text = "Nhập lại mật khẩu";
                 txt_repassword.ForeColor = Color.Gray;
+                txt_repassword.UseSystemPasswordChar = false;
+
             }
         }
 

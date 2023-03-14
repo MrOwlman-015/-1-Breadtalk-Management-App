@@ -41,7 +41,6 @@ namespace QLBreadtalk
             this.panel22 = new System.Windows.Forms.Panel();
             this.txt_phone = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel23 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,7 +48,6 @@ namespace QLBreadtalk
             this.panel17 = new System.Windows.Forms.Panel();
             this.txt_repassword = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -57,7 +55,6 @@ namespace QLBreadtalk
             this.panel10 = new System.Windows.Forms.Panel();
             this.txt_password = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lb_exist = new System.Windows.Forms.Label();
@@ -65,9 +62,9 @@ namespace QLBreadtalk
             this.panel4 = new System.Windows.Forms.Panel();
             this.txt_username = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlLogin.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel19.SuspendLayout();
@@ -82,6 +79,8 @@ namespace QLBreadtalk
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -100,21 +99,17 @@ namespace QLBreadtalk
             this.pnlLogin.Controls.Add(this.panel12);
             this.pnlLogin.Controls.Add(this.panel19);
             this.pnlLogin.Controls.Add(this.label8);
-            this.pnlLogin.Controls.Add(this.panel23);
             this.pnlLogin.Controls.Add(this.panel14);
             this.pnlLogin.Controls.Add(this.label6);
-            this.pnlLogin.Controls.Add(this.panel18);
             this.pnlLogin.Controls.Add(this.panel7);
             this.pnlLogin.Controls.Add(this.label4);
-            this.pnlLogin.Controls.Add(this.panel11);
             this.pnlLogin.Controls.Add(this.panel5);
             this.pnlLogin.Controls.Add(this.label2);
-            this.pnlLogin.Controls.Add(this.panel3);
             this.pnlLogin.Controls.Add(this.label1);
             this.pnlLogin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlLogin.Location = new System.Drawing.Point(419, 53);
+            this.pnlLogin.Location = new System.Drawing.Point(411, 53);
             this.pnlLogin.Name = "pnlLogin";
-            this.pnlLogin.Size = new System.Drawing.Size(697, 586);
+            this.pnlLogin.Size = new System.Drawing.Size(705, 586);
             this.pnlLogin.TabIndex = 3;
             // 
             // panel12
@@ -164,7 +159,7 @@ namespace QLBreadtalk
             // 
             this.panel19.Controls.Add(this.panel20);
             this.panel19.Controls.Add(this.panel21);
-            this.panel19.Location = new System.Drawing.Point(342, 354);
+            this.panel19.Location = new System.Drawing.Point(181, 348);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(256, 92);
             this.panel19.TabIndex = 14;
@@ -228,25 +223,17 @@ namespace QLBreadtalk
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(177, 369);
+            this.label8.Location = new System.Drawing.Point(16, 363);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(106, 20);
             this.label8.TabIndex = 12;
             this.label8.Text = "Số điện thoại";
             // 
-            // panel23
-            // 
-            this.panel23.Location = new System.Drawing.Point(114, 354);
-            this.panel23.Margin = new System.Windows.Forms.Padding(4);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(56, 55);
-            this.panel23.TabIndex = 13;
-            // 
             // panel14
             // 
             this.panel14.Controls.Add(this.panel15);
             this.panel14.Controls.Add(this.panel16);
-            this.panel14.Location = new System.Drawing.Point(342, 256);
+            this.panel14.Location = new System.Drawing.Point(181, 250);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(256, 92);
             this.panel14.TabIndex = 11;
@@ -310,25 +297,17 @@ namespace QLBreadtalk
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(177, 271);
+            this.label6.Location = new System.Drawing.Point(16, 265);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(152, 20);
             this.label6.TabIndex = 9;
             this.label6.Text = "Xác nhận mật khẩu";
             // 
-            // panel18
-            // 
-            this.panel18.Location = new System.Drawing.Point(114, 256);
-            this.panel18.Margin = new System.Windows.Forms.Padding(4);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(56, 55);
-            this.panel18.TabIndex = 10;
-            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.panel9);
-            this.panel7.Location = new System.Drawing.Point(342, 158);
+            this.panel7.Location = new System.Drawing.Point(181, 152);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(256, 92);
             this.panel7.TabIndex = 8;
@@ -392,25 +371,17 @@ namespace QLBreadtalk
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(177, 173);
+            this.label4.Location = new System.Drawing.Point(16, 167);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "Mật khẩu";
             // 
-            // panel11
-            // 
-            this.panel11.Location = new System.Drawing.Point(114, 158);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(56, 55);
-            this.panel11.TabIndex = 7;
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.panel2);
-            this.panel5.Location = new System.Drawing.Point(342, 60);
+            this.panel5.Location = new System.Drawing.Point(181, 54);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(256, 92);
             this.panel5.TabIndex = 5;
@@ -474,44 +445,48 @@ namespace QLBreadtalk
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(177, 75);
+            this.label2.Location = new System.Drawing.Point(16, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tài khoản";
             // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(114, 60);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(56, 55);
-            this.panel3.TabIndex = 4;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(417, 14);
+            this.label1.Location = new System.Drawing.Point(322, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Đăng ký";
             // 
-            // panel13
+            // pictureBox2
             // 
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel13.Location = new System.Drawing.Point(0, 53);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(421, 586);
-            this.panel13.TabIndex = 4;
+            this.pictureBox2.Location = new System.Drawing.Point(21, 24);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(8, 13);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::QLBreadtalk.Properties.Resources.background;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 53);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(413, 586);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // fRegist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1116, 639);
-            this.Controls.Add(this.panel13);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -540,6 +515,8 @@ namespace QLBreadtalk
             this.panel6.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -555,11 +532,9 @@ namespace QLBreadtalk
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txt_username;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button btn_login;
-        private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button back;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Panel panel20;
@@ -568,7 +543,6 @@ namespace QLBreadtalk
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.TextBox txt_phone;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label5;
@@ -576,7 +550,6 @@ namespace QLBreadtalk
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.TextBox txt_repassword;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label3;
@@ -584,6 +557,7 @@ namespace QLBreadtalk
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
