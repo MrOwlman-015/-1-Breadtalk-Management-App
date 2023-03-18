@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -61,26 +60,6 @@ namespace QuanLyBanHang.Forms
         private void lblNgay_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void load_data()
-        {
-            string connetionString;
-            SqlConnection cnn;
-            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\QLBreadtalk.mdf";
-            cnn = new SqlConnection(connetionString);
-            cnn.Open();
-            SqlCommand cmd = new SqlCommand("select * from NhanVien", cnn);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            dataGridView2.DataSource = table;
-            cnn.Close();
-
-        }
-
-        private void btnXemNV_Click(object sender, EventArgs e)
-        {
         }
     }
 }
