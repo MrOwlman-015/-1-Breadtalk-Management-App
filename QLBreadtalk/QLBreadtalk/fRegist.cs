@@ -8,11 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using DTO;
 
 namespace QLBreadtalk
 {
     public partial class fRegist : Form
     {
+        BUS_KhachHang kh = new BUS_KhachHang();
         /*Form opener;*/
         public fRegist(Form opener)
         {
@@ -23,62 +26,83 @@ namespace QLBreadtalk
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            string connetionString;
-            SqlConnection cnn;
-            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\QLBreadtalk.mdf";
-            cnn = new SqlConnection(connetionString);
-            cnn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM NhanVien WHERE username=@tk", cnn);
-            cmd.Parameters.AddWithValue("@tk", txt_username.Text);
-            SqlDataReader dr = cmd.ExecuteReader();
-            if (dr.HasRows)
+            /*DTO.DTO_KhachHang dto_kh = new DTO_KhachHang(null, "Teof", txt_username.Text, txt_password.Text, txt_phone.Text);
+            DTO_KhachHang dto_kh2 = kh.getKhachHangbyUsername(txt_username.Text);
+            
+            if (String.Compare(dto_kh.TkKH, dto_kh2.TkKH) == 0)
             {
-                MessageBox.Show("Username already in used");
-                dr.Close();
-                return;
-            }
-            else
-            {
-                dr.Close();
                 if (String.Compare(txt_password.Text, txt_repassword.Text) != 0)
                 {
-                    MessageBox.Show("Xac nhan mk sai");
+                    MessageBox.Show("Xác nhận mật khẩu sai!");
                     return;
                 }
-                SqlCommand cmd2 = new SqlCommand("SELECT * from NhanVien where sdt=@sdt", cnn);
-                cmd2.Parameters.AddWithValue("@sdt", txt_phone.Text.ToLower());
-                SqlDataReader dr2 = cmd2.ExecuteReader();
-                if (dr2.HasRows)
+                DataTable dt = kh.getKhachHangbyPhone(txt_phone.Text);
+                if (dt.Rows.Count > 0)
                 {
-                    MessageBox.Show("Phone already in used");
-                    dr2.Close(); return;
-                }
-                dr2.Close();
-                SqlCommand cmd3 = new SqlCommand("INSERT INTO NhanVien values (@username, @pass, @hotenNV, @sdt, @socalam, @loainv);", cnn);
-                cmd3.Parameters.AddWithValue("@username", txt_username.Text);
-                cmd3.Parameters.AddWithValue("@pass", txt_password.Text);
-                cmd3.Parameters.AddWithValue("@hotenNV", "");
-                cmd3.Parameters.AddWithValue("@sdt", txt_phone.Text);
-                cmd3.Parameters.AddWithValue("@socalam", 0);
-                cmd3.Parameters.AddWithValue("@loainv", 0);
-                int i = cmd3.ExecuteNonQuery();
-                if (i != 0)
-                {
-                    MessageBox.Show("Success");
+
+                    if (kh.themKhachHang(dto_kh))
+                    {
+                        MessageBox.Show("Thanh cong!");
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Fail!");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Fail");
+                    MessageBox.Show("Phone already in used");
+                    return;
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Username already in used");
+                return;
+            }*/
+
+
+
+            DTO_KhachHang dto_kh = new DTO_KhachHang(null, txt_name.Text, txt_username.Text, txt_password.Text, txt_phone.Text);
+            BUS.BUS_TaiKhoan tk = new BUS_TaiKhoan();
+            if (!tk.checkUsernameUsed(txt_username.Text))
+            {
+                if (String.Compare(txt_password.Text, txt_repassword.Text) != 0)
+                {
+                    MessageBox.Show("Xác nhận mật khẩu sai!");
+                    return;
+                }
+                BUS.BUS_KhachHang buskh = new BUS_KhachHang();
+                if (!buskh.checkPhoneUsed(txt_phone.Text))
+                {
+                    if (kh.themKhachHang(dto_kh))
+                    {
+                        MessageBox.Show("Thanh cong");
+                    }
+                    else
+                    {
+                        MessageBox.Show("That bai");
+                    }
+                }
+                else
+                {
+                    pnl_phone.Visible = true;
                 }
             }
-            cnn.Close();
-            this.Close();
+            else
+            {
+                pnl_username.Visible = true;
+                return;
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+        private void btn_return_Click(object sender, EventArgs e)
         {
             this.Close();
-            
+
         }
 
         private void txt_username_Enter(object sender, EventArgs e)
@@ -94,9 +118,7 @@ namespace QLBreadtalk
         {
         }
 
-        private void txt_repassword_TextChanged(object sender, EventArgs e)
-        {
-        }
+        
 
         private void txt_phone_TextChanged(object sender, EventArgs e)
         {
@@ -178,5 +200,39 @@ namespace QLBreadtalk
                 txt_phone.ForeColor = Color.Gray;
             }
         }
+
+        private void lbl_repassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_phone_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_name_Enter(object sender, EventArgs e)
+        {
+            if (txt_name.Text == "Họ và tên")
+            {
+                txt_name.Text = "";
+                txt_name.ForeColor = Color.Black;
+            }
+        }
+
+        private void txt_name_Leave(object sender, EventArgs e)
+        {
+            if (txt_name.Text == "")
+            {
+                txt_name.Text = "Họ và tên";
+                txt_name.ForeColor = Color.Gray;
+            }
+        }
     }
 }
+ 

@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Xml.Linq;
-
+using BUS;
+using DTO;
 namespace QLBreadtalk
 {
+    
     public partial class fLogin : Form
     {
+        BUS.BUS_TaiKhoan tk = new BUS_TaiKhoan();
         public fLogin()
         {
             InitializeComponent();
@@ -46,29 +49,31 @@ namespace QLBreadtalk
                 panel8.Visible = true;
                 return;
             }
-            string connetionString;
-            SqlConnection cnn;
-            connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\QLBreadtalk.mdf";
-            cnn = new SqlConnection(connetionString);
-            cnn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM NhanVien WHERE username=@tk and pass=@mk", cnn);
-            cmd.Parameters.AddWithValue("@tk", txt_username.Text);
-            cmd.Parameters.AddWithValue("@mk", txt_mk.Text);
-            SqlDataReader dr = cmd.ExecuteReader();
-            if (dr.HasRows)
+
+
+            DTO.DTO_TaiKhoan dto_tk = new DTO_TaiKhoan(txt_username.Text, txt_mk.Text, 3);
+            if (tk.checkLogIn(txt_username.Text, txt_mk.Text))
             {
-                dr.Close();
-                MessageBox.Show("Login succeeded");
+                if (tk.getTypeOfAccount(txt_username.Text) == 1)
+                {
+                    MessageBox.Show("Succeed to sign in to admin mainpage.");
+                    fMenu fm = new fMenu();
+                    this.Hide();
+                    fm.ShowDialog();
+                    this.Show();
+                }
+
+
+
+
+                
             }
             else
             {
-                dr.Close();
-                MessageBox.Show("Failed to login");
-                txt_username.Text = "";
-                txt_mk.Text = "";
-                return;
+                MessageBox.Show("Đăng nhập thất bại!");
             }
-            cnn.Close();
+
+
             this.Close();
         }
 

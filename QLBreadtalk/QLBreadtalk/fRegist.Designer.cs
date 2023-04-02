@@ -31,53 +31,61 @@ namespace QLBreadtalk
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlLogin = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.back = new System.Windows.Forms.Button();
-            this.btn_login = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.txt_name = new System.Windows.Forms.TextBox();
+            this.pnl_button = new System.Windows.Forms.Panel();
+            this.btn_return = new System.Windows.Forms.Button();
+            this.btn_regist = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
+            this.pnl_phone = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.txt_phone = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbl_phone = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
+            this.pnl_repassword = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.txt_repassword = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbl_repassword = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.pnl_password = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.txt_password = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_password = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.pnl_username = new System.Windows.Forms.Panel();
             this.lb_exist = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txt_username = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_username = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlLogin.SuspendLayout();
-            this.panel12.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.pnl_button.SuspendLayout();
             this.panel19.SuspendLayout();
-            this.panel20.SuspendLayout();
+            this.pnl_phone.SuspendLayout();
             this.panel21.SuspendLayout();
             this.panel14.SuspendLayout();
-            this.panel15.SuspendLayout();
+            this.pnl_repassword.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.pnl_password.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.pnl_username.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -96,15 +104,17 @@ namespace QLBreadtalk
             // pnlLogin
             // 
             this.pnlLogin.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pnlLogin.Controls.Add(this.panel12);
-            this.pnlLogin.Controls.Add(this.panel19);
-            this.pnlLogin.Controls.Add(this.label8);
-            this.pnlLogin.Controls.Add(this.panel14);
-            this.pnlLogin.Controls.Add(this.label6);
-            this.pnlLogin.Controls.Add(this.panel7);
-            this.pnlLogin.Controls.Add(this.label4);
-            this.pnlLogin.Controls.Add(this.panel5);
             this.pnlLogin.Controls.Add(this.label2);
+            this.pnlLogin.Controls.Add(this.panel3);
+            this.pnlLogin.Controls.Add(this.pnl_button);
+            this.pnlLogin.Controls.Add(this.panel19);
+            this.pnlLogin.Controls.Add(this.lbl_phone);
+            this.pnlLogin.Controls.Add(this.panel14);
+            this.pnlLogin.Controls.Add(this.lbl_repassword);
+            this.pnlLogin.Controls.Add(this.panel7);
+            this.pnlLogin.Controls.Add(this.lbl_password);
+            this.pnlLogin.Controls.Add(this.panel5);
+            this.pnlLogin.Controls.Add(this.lbl_username);
             this.pnlLogin.Controls.Add(this.label1);
             this.pnlLogin.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlLogin.Location = new System.Drawing.Point(411, 53);
@@ -112,67 +122,129 @@ namespace QLBreadtalk
             this.pnlLogin.Size = new System.Drawing.Size(705, 586);
             this.pnlLogin.TabIndex = 3;
             // 
-            // panel12
+            // label2
             // 
-            this.panel12.Controls.Add(this.back);
-            this.panel12.Controls.Add(this.btn_login);
-            this.panel12.Location = new System.Drawing.Point(114, 474);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(484, 87);
-            this.panel12.TabIndex = 11;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(16, 258);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Họ và tên";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // back
+            // panel3
             // 
-            this.back.FlatAppearance.BorderColor = System.Drawing.Color.DarkOrange;
-            this.back.FlatAppearance.BorderSize = 2;
-            this.back.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrange;
-            this.back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back.ForeColor = System.Drawing.Color.Black;
-            this.back.Location = new System.Drawing.Point(67, 22);
-            this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(160, 50);
-            this.back.TabIndex = 15;
-            this.back.Text = "Quay lại";
-            this.back.UseVisualStyleBackColor = true;
-            this.back.Click += new System.EventHandler(this.button1_Click);
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.panel8);
+            this.panel3.Location = new System.Drawing.Point(125, 258);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(256, 92);
+            this.panel3.TabIndex = 15;
             // 
-            // btn_login
+            // panel6
             // 
-            this.btn_login.FlatAppearance.BorderColor = System.Drawing.Color.DarkOrange;
-            this.btn_login.FlatAppearance.BorderSize = 2;
-            this.btn_login.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrange;
-            this.btn_login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_login.ForeColor = System.Drawing.Color.Black;
-            this.btn_login.Location = new System.Drawing.Point(272, 22);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(160, 50);
-            this.btn_login.TabIndex = 0;
-            this.btn_login.Text = "Đăng ký";
-            this.btn_login.UseVisualStyleBackColor = true;
-            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 55);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(256, 28);
+            this.panel6.TabIndex = 4;
+            this.panel6.Visible = false;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.panel11);
+            this.panel8.Controls.Add(this.txt_name);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(256, 55);
+            this.panel8.TabIndex = 3;
+            // 
+            // panel11
+            // 
+            this.panel11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel11.Location = new System.Drawing.Point(4, 43);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(211, 1);
+            this.panel11.TabIndex = 4;
+            // 
+            // txt_name
+            // 
+            this.txt_name.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txt_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_name.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txt_name.Location = new System.Drawing.Point(4, 15);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(211, 23);
+            this.txt_name.TabIndex = 1;
+            this.txt_name.Text = "Họ và tên";
+            this.txt_name.Enter += new System.EventHandler(this.txt_name_Enter);
+            this.txt_name.Leave += new System.EventHandler(this.txt_name_Leave);
+            // 
+            // pnl_button
+            // 
+            this.pnl_button.Controls.Add(this.btn_return);
+            this.pnl_button.Controls.Add(this.btn_regist);
+            this.pnl_button.Location = new System.Drawing.Point(125, 478);
+            this.pnl_button.Name = "pnl_button";
+            this.pnl_button.Size = new System.Drawing.Size(484, 87);
+            this.pnl_button.TabIndex = 11;
+            // 
+            // btn_return
+            // 
+            this.btn_return.FlatAppearance.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_return.FlatAppearance.BorderSize = 2;
+            this.btn_return.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrange;
+            this.btn_return.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_return.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_return.ForeColor = System.Drawing.Color.Black;
+            this.btn_return.Location = new System.Drawing.Point(67, 22);
+            this.btn_return.Name = "btn_return";
+            this.btn_return.Size = new System.Drawing.Size(160, 50);
+            this.btn_return.TabIndex = 15;
+            this.btn_return.Text = "Quay lại";
+            this.btn_return.UseVisualStyleBackColor = true;
+            this.btn_return.Click += new System.EventHandler(this.btn_return_Click);
+            // 
+            // btn_regist
+            // 
+            this.btn_regist.FlatAppearance.BorderColor = System.Drawing.Color.DarkOrange;
+            this.btn_regist.FlatAppearance.BorderSize = 2;
+            this.btn_regist.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOrange;
+            this.btn_regist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_regist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_regist.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_regist.ForeColor = System.Drawing.Color.Black;
+            this.btn_regist.Location = new System.Drawing.Point(272, 22);
+            this.btn_regist.Name = "btn_regist";
+            this.btn_regist.Size = new System.Drawing.Size(160, 50);
+            this.btn_regist.TabIndex = 0;
+            this.btn_regist.Text = "Đăng ký";
+            this.btn_regist.UseVisualStyleBackColor = true;
+            this.btn_regist.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // panel19
             // 
-            this.panel19.Controls.Add(this.panel20);
+            this.panel19.Controls.Add(this.pnl_phone);
             this.panel19.Controls.Add(this.panel21);
-            this.panel19.Location = new System.Drawing.Point(181, 348);
+            this.panel19.Location = new System.Drawing.Point(125, 356);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(256, 92);
             this.panel19.TabIndex = 14;
             // 
-            // panel20
+            // pnl_phone
             // 
-            this.panel20.Controls.Add(this.label7);
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel20.Location = new System.Drawing.Point(0, 55);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(256, 28);
-            this.panel20.TabIndex = 4;
-            this.panel20.Visible = false;
+            this.pnl_phone.Controls.Add(this.label7);
+            this.pnl_phone.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_phone.Location = new System.Drawing.Point(0, 55);
+            this.pnl_phone.Name = "pnl_phone";
+            this.pnl_phone.Size = new System.Drawing.Size(256, 28);
+            this.pnl_phone.TabIndex = 4;
+            this.pnl_phone.Visible = false;
             // 
             // label7
             // 
@@ -181,9 +253,9 @@ namespace QLBreadtalk
             this.label7.ForeColor = System.Drawing.Color.Red;
             this.label7.Location = new System.Drawing.Point(0, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 16);
+            this.label7.Size = new System.Drawing.Size(142, 16);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Tên đăng nhập đã tồn tại";
+            this.label7.Text = "Số điện thoại đã tồn tại";
             // 
             // panel21
             // 
@@ -219,34 +291,35 @@ namespace QLBreadtalk
             this.txt_phone.Enter += new System.EventHandler(this.txt_phone_Enter);
             this.txt_phone.Leave += new System.EventHandler(this.txt_phone_Leave);
             // 
-            // label8
+            // lbl_phone
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 363);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 20);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Số điện thoại";
+            this.lbl_phone.AutoSize = true;
+            this.lbl_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_phone.Location = new System.Drawing.Point(16, 356);
+            this.lbl_phone.Name = "lbl_phone";
+            this.lbl_phone.Size = new System.Drawing.Size(106, 20);
+            this.lbl_phone.TabIndex = 12;
+            this.lbl_phone.Text = "Số điện thoại";
+            this.lbl_phone.Click += new System.EventHandler(this.lbl_phone_Click);
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.panel15);
+            this.panel14.Controls.Add(this.pnl_repassword);
             this.panel14.Controls.Add(this.panel16);
-            this.panel14.Location = new System.Drawing.Point(181, 250);
+            this.panel14.Location = new System.Drawing.Point(426, 160);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(256, 92);
             this.panel14.TabIndex = 11;
             // 
-            // panel15
+            // pnl_repassword
             // 
-            this.panel15.Controls.Add(this.label5);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel15.Location = new System.Drawing.Point(0, 55);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(256, 28);
-            this.panel15.TabIndex = 4;
-            this.panel15.Visible = false;
+            this.pnl_repassword.Controls.Add(this.label5);
+            this.pnl_repassword.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_repassword.Location = new System.Drawing.Point(0, 55);
+            this.pnl_repassword.Name = "pnl_repassword";
+            this.pnl_repassword.Size = new System.Drawing.Size(256, 28);
+            this.pnl_repassword.TabIndex = 4;
+            this.pnl_repassword.Visible = false;
             // 
             // label5
             // 
@@ -289,38 +362,38 @@ namespace QLBreadtalk
             this.txt_repassword.Size = new System.Drawing.Size(211, 23);
             this.txt_repassword.TabIndex = 1;
             this.txt_repassword.Text = "Nhập lại mật khẩu";
-            this.txt_repassword.TextChanged += new System.EventHandler(this.txt_repassword_TextChanged);
             this.txt_repassword.Enter += new System.EventHandler(this.txt_repassword_Enter);
             this.txt_repassword.Leave += new System.EventHandler(this.txt_repassword_Leave);
             // 
-            // label6
+            // lbl_repassword
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(16, 265);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(152, 20);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Xác nhận mật khẩu";
+            this.lbl_repassword.AutoSize = true;
+            this.lbl_repassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_repassword.Location = new System.Drawing.Point(422, 137);
+            this.lbl_repassword.Name = "lbl_repassword";
+            this.lbl_repassword.Size = new System.Drawing.Size(152, 20);
+            this.lbl_repassword.TabIndex = 9;
+            this.lbl_repassword.Text = "Xác nhận mật khẩu";
+            this.lbl_repassword.Click += new System.EventHandler(this.lbl_repassword_Click);
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Controls.Add(this.pnl_password);
             this.panel7.Controls.Add(this.panel9);
-            this.panel7.Location = new System.Drawing.Point(181, 152);
+            this.panel7.Location = new System.Drawing.Point(125, 160);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(256, 92);
             this.panel7.TabIndex = 8;
             // 
-            // panel8
+            // pnl_password
             // 
-            this.panel8.Controls.Add(this.label3);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 55);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(256, 28);
-            this.panel8.TabIndex = 4;
-            this.panel8.Visible = false;
+            this.pnl_password.Controls.Add(this.label3);
+            this.pnl_password.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_password.Location = new System.Drawing.Point(0, 55);
+            this.pnl_password.Name = "pnl_password";
+            this.pnl_password.Size = new System.Drawing.Size(256, 28);
+            this.pnl_password.TabIndex = 4;
+            this.pnl_password.Visible = false;
             // 
             // label3
             // 
@@ -367,34 +440,34 @@ namespace QLBreadtalk
             this.txt_password.Enter += new System.EventHandler(this.txt_password_Enter);
             this.txt_password.Leave += new System.EventHandler(this.txt_password_Leave);
             // 
-            // label4
+            // lbl_password
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(16, 167);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Mật khẩu";
+            this.lbl_password.AutoSize = true;
+            this.lbl_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_password.Location = new System.Drawing.Point(16, 160);
+            this.lbl_password.Name = "lbl_password";
+            this.lbl_password.Size = new System.Drawing.Size(77, 20);
+            this.lbl_password.TabIndex = 6;
+            this.lbl_password.Text = "Mật khẩu";
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.pnl_username);
             this.panel5.Controls.Add(this.panel2);
-            this.panel5.Location = new System.Drawing.Point(181, 54);
+            this.panel5.Location = new System.Drawing.Point(125, 62);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(256, 92);
             this.panel5.TabIndex = 5;
             // 
-            // panel6
+            // pnl_username
             // 
-            this.panel6.Controls.Add(this.lb_exist);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 55);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(256, 28);
-            this.panel6.TabIndex = 4;
-            this.panel6.Visible = false;
+            this.pnl_username.Controls.Add(this.lb_exist);
+            this.pnl_username.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_username.Location = new System.Drawing.Point(0, 55);
+            this.pnl_username.Name = "pnl_username";
+            this.pnl_username.Size = new System.Drawing.Size(256, 28);
+            this.pnl_username.TabIndex = 4;
+            this.pnl_username.Visible = false;
             // 
             // lb_exist
             // 
@@ -441,15 +514,15 @@ namespace QLBreadtalk
             this.txt_username.Enter += new System.EventHandler(this.txt_username_Enter);
             this.txt_username.Leave += new System.EventHandler(this.txt_username_Leave);
             // 
-            // label2
+            // lbl_username
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tài khoản";
+            this.lbl_username.AutoSize = true;
+            this.lbl_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_username.Location = new System.Drawing.Point(16, 62);
+            this.lbl_username.Name = "lbl_username";
+            this.lbl_username.Size = new System.Drawing.Size(81, 20);
+            this.lbl_username.TabIndex = 1;
+            this.lbl_username.Text = "Tài khoản";
             // 
             // label1
             // 
@@ -494,25 +567,28 @@ namespace QLBreadtalk
             this.Text = "fRegist";
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
-            this.panel12.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.pnl_button.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
+            this.pnl_phone.ResumeLayout(false);
+            this.pnl_phone.PerformLayout();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
             this.panel14.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
+            this.pnl_repassword.ResumeLayout(false);
+            this.pnl_repassword.PerformLayout();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
             this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            this.pnl_password.ResumeLayout(false);
+            this.pnl_password.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            this.pnl_username.ResumeLayout(false);
+            this.pnl_username.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -526,38 +602,44 @@ namespace QLBreadtalk
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlLogin;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel pnl_username;
         private System.Windows.Forms.Label lb_exist;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txt_username;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_username;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Button btn_login;
-        private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Panel pnl_button;
+        private System.Windows.Forms.Button btn_regist;
+        private System.Windows.Forms.Button btn_return;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Panel pnl_phone;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.TextBox txt_phone;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lbl_phone;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel pnl_repassword;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.TextBox txt_repassword;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbl_repassword;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel pnl_password;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.TextBox txt_password;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_password;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.TextBox txt_name;
+        private System.Windows.Forms.Label label2;
     }
 }
