@@ -59,7 +59,8 @@ namespace QLBreadtalk
             }
             else
             {
-                pnl_saiTaiKhoan.Visible = true;
+                /*pnl_saiTaiKhoan.Visible = true;*/
+                MessageBox.Show("Đã tồn tại tài khoản!");
                 return;
             }
         }

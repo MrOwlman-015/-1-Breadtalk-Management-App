@@ -92,54 +92,77 @@ namespace QLBreadtalk
             {
                 DTO_Banh dTO_Banh = new DTO_Banh(Convert.ToInt32(txt_ID.Text), txt_TenBanh.Text, Convert.ToInt32(nbr_SoLuong.Value), Convert.ToInt32(nbr_DonGia.Value));
                 BUS_Banh bh = new BUS_Banh();
-                if (!bh.checkBanhbyID(Convert.ToInt32(txt_ID.Text)))
+
+                if (Convert.ToInt32(nbr_DonGia.Value) <= 0 || Convert.ToInt32(nbr_SoLuong.Value) <= 0)
                 {
-                    if (bh.themBanh(dTO_Banh))
-                    {
-                        MessageBox.Show("Thêm bánh thành công!");
-                        DataTable da = kb.getKhoBanhbyID(Convert.ToInt32(txt_ID.Text));
-                        DataRow row = da.Rows[0];
-                        int soBanhTon = (int)(row["soLuongTon"]);
-                        int soBanhXuat = (int)(row["soLuongXuat"]);
-                        int soBanhVao = (int)(row["soLuongVao"]);
-                        int soBanhHong = (int)(row["soBanhHong"]);
-                        DTO_KhoBanh kb2 = new DTO_KhoBanh(Convert.ToInt32(txt_ID.Text), txt_TenBanh.Text, soBanhTon - Convert.ToInt32(nbr_SoLuong.Value), soBanhXuat + Convert.ToInt32(nbr_SoLuong.Value), soBanhVao, soBanhHong);
-                        kb.suaKhoBanh(kb2);
-                        kb.bindGridView(dgv_Banh);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Thêm bánh thất bại!");
-                    }
+                    MessageBox.Show("Đơn giá hoặc số lượng không được bé hơn hoặc bằng 0!");
+                    return;
                 }
                 else
                 {
-                    DataTable da_banh = bh.getBanhbyID(Convert.ToInt32(txt_ID.Text));
-                    DataRow row_banh = da_banh.Rows[0];
-                    int soLuong = (int)(row_banh["soLuong"]);
-                    dTO_Banh.SoLuong += soLuong;
-                    if (bh.suaBanh(dTO_Banh))
+                    DataTable da0 = kb.getKhoBanhbyID(Convert.ToInt32(txt_ID.Text));
+                    DataRow row0 = da0.Rows[0];
+                    int soBanhTon0 = (int)(row0["soLuongTon"]);
+                    if (soBanhTon0 < Convert.ToInt32(nbr_SoLuong.Value))
                     {
-                        MessageBox.Show("Thêm bánh thành công!");
-                        DataTable da = kb.getKhoBanhbyID(Convert.ToInt32(txt_ID.Text));
-                        DataRow row = da.Rows[0];
-                        int soBanhTon = (int)(row["soLuongTon"]);
-                        int soBanhXuat = (int)(row["soLuongXuat"]);
-                        int soBanhVao = (int)(row["soLuongVao"]);
-                        int soBanhHong = (int)(row["soBanhHong"]);
-                        DTO_KhoBanh kb2 = new DTO_KhoBanh(Convert.ToInt32(txt_ID.Text), txt_TenBanh.Text, soBanhTon - Convert.ToInt32(nbr_SoLuong.Value), soBanhXuat + Convert.ToInt32(nbr_SoLuong.Value), soBanhVao, soBanhHong);
-                        kb.suaKhoBanh(kb2);
-                        kb.bindGridView(dgv_Banh);
+                        MessageBox.Show("Số lượng nhập vào không được lớn hơn số lượng bánh tồn trong kho!");
+                        return;
                     }
                     else
                     {
-                        MessageBox.Show("Thêm bánh thất bại!");
+                        if (!bh.checkBanhbyID(Convert.ToInt32(txt_ID.Text)))
+                        {
+                            if (bh.themBanh(dTO_Banh))
+                            {
+                                MessageBox.Show("Thêm bánh thành công!");
+                                DataTable da = kb.getKhoBanhbyID(Convert.ToInt32(txt_ID.Text));
+                                DataRow row = da.Rows[0];
+                                int soBanhTon = (int)(row["soLuongTon"]);
+                                int soBanhXuat = (int)(row["soLuongXuat"]);
+                                int soBanhVao = (int)(row["soLuongVao"]);
+                                int soBanhHong = (int)(row["soBanhHong"]);
+                                DTO_KhoBanh kb2 = new DTO_KhoBanh(Convert.ToInt32(txt_ID.Text), txt_TenBanh.Text, soBanhTon - Convert.ToInt32(nbr_SoLuong.Value), soBanhXuat + Convert.ToInt32(nbr_SoLuong.Value), soBanhVao, soBanhHong);
+                                kb.suaKhoBanh(kb2);
+                                kb.bindGridView(dgv_Banh);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Thêm bánh thất bại!");
+                                return;
+                            }
+                        }
+                        else
+                        {
+                            DataTable da_banh = bh.getBanhbyID(Convert.ToInt32(txt_ID.Text));
+                            DataRow row_banh = da_banh.Rows[0];
+                            int soLuong = (int)(row_banh["soLuong"]);
+                            dTO_Banh.SoLuong += soLuong;
+                            if (bh.suaBanh(dTO_Banh))
+                            {
+                                MessageBox.Show("Thêm bánh thành công!");
+                                DataTable da = kb.getKhoBanhbyID(Convert.ToInt32(txt_ID.Text));
+                                DataRow row = da.Rows[0];
+                                int soBanhTon = (int)(row["soLuongTon"]);
+                                int soBanhXuat = (int)(row["soLuongXuat"]);
+                                int soBanhVao = (int)(row["soLuongVao"]);
+                                int soBanhHong = (int)(row["soBanhHong"]);
+                                DTO_KhoBanh kb2 = new DTO_KhoBanh(Convert.ToInt32(txt_ID.Text), txt_TenBanh.Text, soBanhTon - Convert.ToInt32(nbr_SoLuong.Value), soBanhXuat + Convert.ToInt32(nbr_SoLuong.Value), soBanhVao, soBanhHong);
+                                kb.suaKhoBanh(kb2);
+                                kb.bindGridView(dgv_Banh);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Thêm bánh thất bại!");
+                                return;
+                            }
+                        }
                     }
                 }
             }
             else
             {
-
+                MessageBox.Show("Thêm bánh thất bại!");
+                return;
             }
         }
 

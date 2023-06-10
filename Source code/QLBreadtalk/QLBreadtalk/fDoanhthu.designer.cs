@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pnl_NgayThang = new System.Windows.Forms.Panel();
             this.dtp_NgayKetThuc = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cht_DoanhThu = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btn_Xem = new System.Windows.Forms.Button();
+            this.btn_Print = new System.Windows.Forms.Button();
             this.pnl_NgayThang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cht_DoanhThu)).BeginInit();
             this.SuspendLayout();
@@ -94,16 +95,16 @@
             // 
             // cht_DoanhThu
             // 
-            chartArea1.Name = "ChartArea1";
-            this.cht_DoanhThu.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.cht_DoanhThu.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.cht_DoanhThu.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.cht_DoanhThu.Legends.Add(legend2);
             this.cht_DoanhThu.Location = new System.Drawing.Point(8, 77);
             this.cht_DoanhThu.Name = "cht_DoanhThu";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.cht_DoanhThu.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.cht_DoanhThu.Series.Add(series2);
             this.cht_DoanhThu.Size = new System.Drawing.Size(1138, 555);
             this.cht_DoanhThu.TabIndex = 13;
             this.cht_DoanhThu.Text = "Doanh Thu";
@@ -118,11 +119,22 @@
             this.btn_Xem.UseVisualStyleBackColor = true;
             this.btn_Xem.Click += new System.EventHandler(this.btn_Xem_Click);
             // 
+            // btn_Print
+            // 
+            this.btn_Print.Location = new System.Drawing.Point(1003, 27);
+            this.btn_Print.Name = "btn_Print";
+            this.btn_Print.Size = new System.Drawing.Size(143, 44);
+            this.btn_Print.TabIndex = 15;
+            this.btn_Print.Text = "In";
+            this.btn_Print.UseVisualStyleBackColor = true;
+            this.btn_Print.Click += new System.EventHandler(this.btn_Print_Click);
+            // 
             // fDoanhthu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1158, 644);
+            this.Controls.Add(this.btn_Print);
             this.Controls.Add(this.btn_Xem);
             this.Controls.Add(this.cht_DoanhThu);
             this.Controls.Add(this.pnl_NgayThang);
@@ -145,5 +157,6 @@
         private System.Windows.Forms.DateTimePicker dtp_NgayKetThuc;
         private System.Windows.Forms.DataVisualization.Charting.Chart cht_DoanhThu;
         private System.Windows.Forms.Button btn_Xem;
+        private System.Windows.Forms.Button btn_Print;
     }
 }

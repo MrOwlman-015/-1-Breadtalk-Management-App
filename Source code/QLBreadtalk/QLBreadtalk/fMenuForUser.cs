@@ -16,6 +16,7 @@ namespace QLBreadtalk
         public fMenuForUser(string id)
         {
             InitializeComponent();
+            /*this.WindowState = FormWindowState.Maximized;*/
             this.id = id;
         }
 

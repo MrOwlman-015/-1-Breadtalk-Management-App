@@ -1,4 +1,4 @@
-﻿ use master
+﻿use master
 if exists (select * from sysdatabases where name = 'QLBreadtalk')
 	drop database QLBreadtalk
 create database QLBreadtalk

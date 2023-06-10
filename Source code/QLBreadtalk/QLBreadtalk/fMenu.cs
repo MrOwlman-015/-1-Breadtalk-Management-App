@@ -21,6 +21,7 @@ namespace QLBreadtalk
         public fMenu()
         {
             InitializeComponent();
+            /*this.WindowState = FormWindowState.Maximized;*/
             random = new Random();
             btnExitMenu.Visible = false;
             this.Text = string.Empty;
